@@ -35,6 +35,15 @@ class UserAccount:
                 return True
             return False
 
+    @classmethod
+    def show_user_details(cls):
+
+        return cls.user_pass_list
+
+    @classmethod
+    def copy_pwd(cls,password):
+        search_acc = UserAccount.search_user_account(password)
+        pyperclip.copy(search_acc.password)
     
     
 
