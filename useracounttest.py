@@ -43,5 +43,19 @@ class UserAccountTest(unittest.TestCase):
         search_user = UserAccount.search_user_account("Facebook")
         self.assertEqual(search_user.account, test_newaccount.account)
 
+    def test_account_exists(self):
 
+        self.new_account.save_user_details()
+        test_newaccount =UserAccount("Gmail","User","Password")
+        test_newaccount.save_user_details()
+        account_exists = UserAccount.check_user_account("Gmail")
+        self.assertTrue(account_exists)
+
+
+    
+    
+
+        
+
+    
     
