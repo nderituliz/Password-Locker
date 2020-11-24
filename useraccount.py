@@ -18,7 +18,26 @@ class UserAccount:
 
         UserAccount.user_pass_list.remove(self)
 
+    @classmethod
+    def search_user_account(cls,account):
+
+        for user_deets in cls.user_pass_list:
+            if user_deets.account == account:
+                return user_deets
+
+
+    @classmethod
+    def check_user_account(cls,account):
+        """ check if a user account exists """
+
+        for user_account_deets in cls.user_pass_list:
+            if user_account_deets.account == account:
+                return True
+            return False
+
     
+    
+
 
     
 
