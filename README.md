@@ -14,7 +14,7 @@ Users can do the following with this App
 * View various account credentials and passwords in their      passwords in the application.
 * Delete a credential account they no longer need in the application. 
 
-## BehaviUor Driven Development
+## Behaviuor Driven Development
 ​
   | BEHAVIOUR                | INPUT                     | OUTPUT                             |
   | ----------------------|:--------------------------:|:---------------------------------:|
