@@ -10,7 +10,7 @@ class User:
         self.email = email
         self.password = password
 
-     def save_user(self):
+    def save_user(self):
          """ 
          Save a user 
           """

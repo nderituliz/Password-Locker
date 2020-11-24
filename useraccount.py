@@ -22,7 +22,7 @@ class UserAccount:
     def search_user_account(cls,account):
 
         for user_deets in cls.user_pass_list:
-            if user_deets.account == account
+            if user_deets.account == account:
                 return user_deets
 
 
@@ -31,7 +31,7 @@ class UserAccount:
         """ check if a user account exists """
 
         for user_account_deets in cls.user_pass_list:
-            if user_account_deets.account == account
+            if user_account_deets.account == account:
                 return True
             return False
 

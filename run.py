@@ -148,7 +148,7 @@ def main():
             print ('\n')
             break
 
-         else:
+        else:
             print("Invalid inputs, please  use these short codes : 'ca' to create a new account, 'da' to display accounts, 'fa' to search an account, 'de' to delete account , 'gp' to generate a random password and 'ex' t0 logout")
 
 if __name__=='__main__':
