@@ -10,4 +10,16 @@ class UserAccount:
         self.email= email
         self.password = password
 
-   
+    def save_user_details(self):
+
+        UserAccount.user_pass_list.append(self)
+
+    def delete_user_details(self):
+
+        UserAccount.user_pass_list.remove(self)
+
+    
+
+    
+
+    
