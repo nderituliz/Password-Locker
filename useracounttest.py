@@ -28,4 +28,20 @@ class UserAccountTest(unittest.TestCase):
         test_newaccount.save_user_details()
         self.assertEqual(len(UserAccount.user_pass_list),2)
 
+    def test_delete_user_account(self):
+
+        self.new_account.save_user_details()
+        test_newaccount = UserAccount("Gmail","User","Password")
+        test_newaccount = save_user_details()
+        self.new_account.delete_user_details()
+        self.assertEqual(len(UserAccount.user_pass_list),1)
+
+    def test_search_user_account(self):
+        self.new_account.save_user_details()
+        test_newaccount = UserAccount("Gmail","User","Password")
+        test_newaccount = save_user_details()
+        search_user = UserAccount.search_user_account("Facebook")
+        self.assertEqual(search_user.account, test_newaccount.account)
+
+
     
