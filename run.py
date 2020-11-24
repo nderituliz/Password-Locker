@@ -26,3 +26,14 @@ def create_user_details(account,email,password):
 def save_user_credentials(user_cred):
     user_cred.save_user_details()
 
+
+def show_account_credentials():
+    return UserAccount.show_user_details()
+
+def search_account(account):
+    return UserAccount.search_user_account(account)
+
+
+def delete_user_credentials(account):
+    account.delete_user_details()
+
