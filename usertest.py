@@ -45,3 +45,5 @@ class UserTest(unittest.TestCase):
         self.assertEqual(user_found.username, self.new_user.username)
 
 
+if __name__ = '__main__':
+    unittest.main()
